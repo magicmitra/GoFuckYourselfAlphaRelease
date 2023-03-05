@@ -22,7 +22,7 @@ func Hello(name string) (string, error) {
 // Hellos return a map that associates each of the named people
 // with a greeting message
 func Hellos(names []string) (map[string]string, error) {
-	// A map to associate names with messages
+	// This is how you make a map -> make(map[key-type]val-type)
 	messages := make(map[string]string)
 
 	// Loop through the received slice of names,
