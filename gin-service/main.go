@@ -22,12 +22,15 @@ var albums = []album{
 
 func main() {
 	router := gin.Default()
+
+	// router
 	router.GET("/albums", getAlbums)
 
 	router.Run("localhost:8080")
 }
 
 // getAlbums responds with the list of all albums as JSON
+// AKA handler/controller
 func getAlbums(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, albums)
 }
